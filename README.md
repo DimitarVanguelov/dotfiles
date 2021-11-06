@@ -1,3 +1,3 @@
-# D.O.T.O.F.I.L.E.S.
+# D.O.T.F.I.L.E.S.
 
 My dotfile repo
