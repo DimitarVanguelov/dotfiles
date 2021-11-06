@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# set up the two monitors for bspwm
+# NOTE This is a simplistic approach 
+# code obtrained from https://protesilaos.com/codelog/multihead-bspwm-polybar/
+my_laptop_external_monitor=$(xrandr --query | grep 'eDP')
+if [[ $my_laptop_external_monitor = *connected* ]]; then
+    xrandr --output eDP --primary --mode 1920x1080 --rotate normal --output DisplayPort-4 --mode 1920x1080 --rotate normal --same-as eDP
+fi
+
