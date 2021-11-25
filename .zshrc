@@ -137,3 +137,6 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 # command for git ops on bare git repo for dotfiles versioning
 alias dtf="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+# Starship
+eval "$(starship init zsh)"
